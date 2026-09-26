@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+  </head>
+  <style>
+    body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url("D:\\React_Projects\\Img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+   
+    header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+    .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+
+    .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+    .lang-box select {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+    .signin-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+    main {
+            text-align: center;
+            margin-top: 120px;
+        }
+
+    h1 {
+            font-size: 36px;
+        }
+
+    .text-1 {
+            font-size: 20px;
+        }
+    .text-2 {
+            font-size: 15px;
+    }
+    
+    form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+    .form-group {
+            position: relative;
+            margin: 0;
+        }
+
+    .form-group input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+        }
+
+    .submit-btn {
+            background: linear-gradient(90deg, #A312C5, #F0182B);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 0;
+        }   
+    
+  </style>
+  <body>
+    <header>
+            <div class="logo">NETFLIX</div>
+            <div class="nav-right">
+                <div class="lang-box">
+                    <select>
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                </div>
+                <a class="signin-btn">Sign In</a>
+            </div>
+    </header>
+    <main>
+            <h1>Spoiler: Your next favourite is here</h1>
+            <p class="text-1">Starts at ₹149. Cancel at any time.</p>
+            <p class="text-2">Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <form>
+                <div class="form-group">
+                    <input type="email" id="email-input" placeholder="Enter email address" required>
+                </div>
+                <button type="submit" class="submit-btn">Get Started </button>
+            </form>
+    </main>
+  </body>
+</html>
